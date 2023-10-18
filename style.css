@@ -1,0 +1,125 @@
+
+body {
+  /* overflow-y:scroll; */
+  margin: 0px;
+  padding: 0px;
+}
+.mobile-message {
+  display: none; /* Hide the message by default */
+}
+.custom_navbar {
+  margin-left: 1100px;
+}
+.nav-link {
+  margin-right: 18px;
+  /* border:3px solid rgb(21, 21, 21); */
+  border: 2px solid rgb(4, 149, 154);
+  border-radius: 10px;
+  height: 43px;
+  box-shadow: 0 4px 4px rgb(4, 149, 154);
+}
+.nav-link:hover {
+  background-color: rgb(4, 149, 154); /* Change the background color on hover */
+  margin-right: 22px;
+}
+.box .content {
+  height: 650px;
+}
+.box {
+  background-image: url("imagefolio2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.blue-line {
+  background-color: rgb(4, 149, 154);
+  height: 4px;
+  position:relative;
+  z-index:4;
+}
+
+.box2[data-type="background"] .content {
+  height: 680px;
+}
+.box2[data-type="background"] {
+  position: relative;
+  /* transform: translateY(100%); */
+  transform: translateZ(0); /* Create the parallax effect */
+  transform: translateY(1%);
+  background-image: url("mywork2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 680px;
+
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(131, 22, 3);
+ height:50px;
+}
+.box3[data-type="background"] .content {
+  height: 708px;
+
+}
+.box3[data-type="background"] {
+  position: relative;
+  /* transform: translateY(100%); */
+  transform: translateZ(0); /* Create the parallax effect */
+  transform: translateY(1%);
+  background-image: url("progress.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* height: 780px;
+  width:800px; */
+  background-size: 1140px 700px; 
+  margin-left: 200px;
+
+
+}
+.contactme{
+  background-color: #ffca56;
+  height:100px;
+  width:auto;
+}
+ #git{
+margin-left:350px;
+}
+#linkedin{
+  margin-left:50px;
+}
+#email{
+  margin-left:50px;
+}
+a {
+  text-decoration: none; /* Remove the default underline */
+
+}
+
+
+
+@media  screen and (max-width: 800px) {
+ body{
+  overflow: hidden;
+ }
+  .hide{
+    z-index: 5;
+    position: fixed;
+    height:100%;
+    width:100%;
+    background-color:white;
+  }
+  .mobile-message  {
+    display: block !important;
+    z-index:10;
+    color:red;
+    position:fixed;
+    font-size: 40px;
+    text-align: center;
+    margin:87px 15px;
+  }
+ 
+}
